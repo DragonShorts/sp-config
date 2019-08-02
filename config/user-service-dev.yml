@@ -19,6 +19,12 @@ management:
       exposure:
         include: refresh
 
+
+---
+spring:
+  profiles: user1
+
+
 ---
 spring:
   profiles: user1
@@ -26,9 +32,13 @@ spring:
 server:
   port: 8101
 
+server:
+  port: 8102
+
 ---
 spring:
   profiles: user2
 
 server:
   port: 8102
+
